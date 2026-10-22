@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>UNICA AUTO REPASSE </title>
-  </head>
-    <BODY>
-      <H1>BEM-VINDOS</H1>
-      <p> site oficial do ebook</p>
-    </body>  
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÚNICA AUTO REPASSE</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: white;
+}
+
+header {
+  background: #080808;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 3px solid gold;
+}
+
+h1 {
+  color: gold;
+  font-size: 32px;
+}
+
+nav a {
+  color: white;
+  margin: 12px;
+  text-decoration: none;
+}
+
+.banner {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #111, #444);
+  animation: aparecer 2s ease-in;
+}
+
+.banner h2 {
+  color: gold;
+  font-size: 38px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 15px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.08);
+  background: white;
+}
+
+section {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.carros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.carro {
+  background: #222;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  border: 1px solid gold;
+  transition: 0.3s;
+}
+
+.carro:hover {
+  transform: translateY(-10px);
+}
+
+.carro h3 {
+  color: gold;
+}
+
+footer {
+  background: black;
+  padding: 30px;
+  text-align: center;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ÚNICA AUTO REPASSE</h1>
+  <p>Seu próximo carro está aqui!</p>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#estoque">Veículos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="banner" id="inicio">
+  <h2>REALIZE O SONHO DO SEU CARRO!</h2>
+  <p>Ofertas especiais e excelentes oportunidades.</p>
+  <a class="botao" href="#estoque">
+    CONHEÇA NOSSOS VEÍCULOS
+  </a>
+</div>
+
+<section id="estoque">
+  <h2>🚗 NOSSO ESTOQUE</h2>
+  <p>Confira nossas oportunidades!</p>
+
+  <div class="carros">
+
+    <div class="carro">
+      <h3>🚘 Veículo 1</h3>
+      <p>Em breve, novas ofertas!</p>
+      <a class="botao" href="#contato">
+        Tenho interesse
+      </a>
+    </div>
+
+    <div class="carro">
+      <h3>🚙 Veículo 2</h3>
+      <p>Em breve, novas ofertas!</p>
+      <a class="botao" href="#contato">
+        Tenho interesse
+      </a>
+    </div>
+
+    <div class="carro">
+      <h3>🚗 Veículo 3</h3>
+      <p>Em breve, novas ofertas!</p>
+      <a class="botao" href="#contato">
+        Tenho interesse
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato">
+  <h2>FALE COM A ÚNICA AUTO REPASSE</h2>
+  <p>Entre em contato para conhecer nossas ofertas.</p>
+  <p>WhatsApp: número a cadastrar</p>
+</section>
+
+<footer>
+  <h3>ÚNICA AUTO REPASSE</h3>
+  <p>Qualidade, confiança e oportunidades!</p>
+</footer>
+
+</body>
 </html>
